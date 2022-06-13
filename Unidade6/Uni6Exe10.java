@@ -39,6 +39,9 @@ public class Uni6Exe10 {
                     ordenar(vetor);
                     break;
 
+                case 7:
+                    inverter(vetor, contador);
+                    break;
             }
         } while (resposta != 8);
     }
@@ -135,6 +138,17 @@ public class Uni6Exe10 {
                     vetor[i] = vetor[i + 1];
                     vetor[i + 1] = bolha;
                 }
+            }
+        }
+    }
+
+    private void inverter(int vetor[], int contador) {
+        int temp = 0;
+        for (int i = vetor.length - contador; i < vetor.length; i++) {
+            for (int x = vetor.length - contador + 1; x < i; x++) {
+                temp = vetor[i];
+                vetor[i] = vetor[x];
+                vetor[x] = temp;
             }
         }
     }
