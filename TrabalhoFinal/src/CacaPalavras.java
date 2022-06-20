@@ -45,7 +45,7 @@ public class CacaPalavras {
     private void palavrasEntradas(String palavras[][]) {
         palavras[0][0] = "IFELSE";
         palavras[1][0] = "FORA";
-        palavras[2][0] = "WHILE";
+        palavras[2][0] = "LE";
         palavras[3][0] = "OBJETO";
         palavras[4][0] = "VETOR";
 
@@ -139,8 +139,10 @@ public class CacaPalavras {
                         k++;
                         if (k == textoTamanho) {
                             palavras[i][1] = "[" + (l) + "," + (j - (k - 1)) + "]" + " - " + texto;
-
+                            k=0;
                         }
+                    }else{
+                        k=0;
                     }
 
                 }
@@ -154,8 +156,10 @@ public class CacaPalavras {
                         k++;
                         if (k == textoTamanho) {
                             palavras[i][1] = "[" + (l) + "," + (j + (k - 1)) + "]" + " - " + texto;
-
+                            k=0;
                         }
+                    }else{
+                        k=0;
                     }
 
                 }
@@ -169,8 +173,10 @@ public class CacaPalavras {
                         k++;
                         if (k == textoTamanho) {
                             palavras[i][1] = "[" + (l - (k - 1)) + "," + (j) + "]" + " - " + texto;
-                            break;
+                            k=0;
                         }
+                    }else{
+                        k=0;
                     }
                 }
             }
@@ -182,8 +188,10 @@ public class CacaPalavras {
                         k++;
                         if (k == textoTamanho) {
                             palavras[i][1] = "[" + (l+ (k - 1)) + "," + (j) + "]" + " - " + texto;
-                            break;
+                            k=0;
                         }
+                    }else{
+                        k=0;
                     }
                 }
             }
