@@ -45,7 +45,7 @@ public class CacaPalavras {
     private void palavrasEntradas(String palavras[][]) {
         palavras[0][0] = "IFELSE";
         palavras[1][0] = "FORA";
-        palavras[2][0] = "LE";
+        palavras[2][0] = "WHILE";
         palavras[3][0] = "OBJETO";
         palavras[4][0] = "VETOR";
 
